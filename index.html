@@ -53,7 +53,7 @@
         <section class="fon-foto fon">
             <div class="container section-decision">
                 <h1 class="decision">ЭФФЕКТИВНЫЕ РЕШЕНИЯ ДЛЯ ВАШЕГО БИЗНЕСА</h1>
-                <button type="button" class="button">Заказать услугу</button>
+                <button type="button" class="button" data-modal-open>Заказать услугу</button>
             </div>
         </section>
         <!-- 3 блок (определения) -->
@@ -349,8 +349,17 @@
 
             </div>
         </div>
-
     </footer>
+    <div class="backdrop is-hidden" data-modal>
+        <div class="modal">
+            <button class="modal-button" data-modal-close>
+                <svg class="close-button">
+                    <use href="./img/iconki/sprite.svg#icon-close-black"></use>
+                </svg>
+            </button>
+        </div>
+    </div>
+    <script src="./js/modal.js"></script>
 </body>
 
 </html>
